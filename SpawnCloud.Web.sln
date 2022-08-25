@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpawnCloud.Web", "SpawnCloud.Web\SpawnCloud.Web.csproj", "{E75153DD-7DF4-4077-9DC7-2D55846ABFEC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpawnCloud.Shared.Web", "SpawnCloud.Shared.Web\SpawnCloud.Shared.Web.csproj", "{E75153DD-7DF4-4077-9DC7-2D55846ABFEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
