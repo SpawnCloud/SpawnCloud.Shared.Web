@@ -4,15 +4,15 @@ namespace SpawnCloud.Shared.Web;
 
 public class ScopeRequirement : IAuthorizationRequirement
 {
-    public string Scope { get; }
+    public IEnumerable<string> AllowedScopes { get; }
 
-    public ScopeRequirement(string scope)
+    public ScopeRequirement(IEnumerable<string>? allowedScopes)
     {
-        Scope = scope;
+        AllowedScopes = allowedScopes ?? Enumerable.Empty<string>();
     }
 
     public override string ToString()
     {
-        return $"ScopeRequirement={Scope}";
+        return $"ScopeRequirement={string.Join(',', AllowedScopes)}";
     }
 }
